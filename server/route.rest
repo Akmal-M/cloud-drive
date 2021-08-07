@@ -1,0 +1,33 @@
+GET http://localhost:5000/
+
+###
+
+GET http://localhost:5000/
+
+###
+
+POST http://localhost:5000/api/auth/registration
+Content-Type: application/json
+
+{
+  "email": "John@Doe.com",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{ 
+  "email": "John@Doe.com",
+  "password": "123456789"
+}
+
+###
+PATCH http://localhost:5000/users/
+Content-Type: application/json
+
+{
+"name": "Jane", "lastName": "Smith"
+}
